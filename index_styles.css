@@ -69,6 +69,7 @@ body::-webkit-scrollbar {
     height: 32px;
     background: url(assets/icons/searchicon.png);
     background-size: cover;
+    transition: 100ms;
 }
 
 .search-button-titlebar:hover {
@@ -76,6 +77,8 @@ body::-webkit-scrollbar {
     height: 32px;
     background: url(assets/icons/searchicon-bold.png);
     background-size: cover;
+    transform: scale(1.1);
+    transition: 100ms;
 }
 
 .main-page {
