@@ -1,11 +1,27 @@
+html {
+    background: url(assets/bg/Clouds.webp) repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'brown';
+}
+
+body {
+    scrollbar-width: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .titlebar {
-    background-color: #333;
+    background-color: #0000004b;
     color: #fff;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -15,6 +31,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 5px 10px #00000048;
+}
+
+.full-page {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .left-side,
@@ -44,5 +67,140 @@
 .search-button-titlebar {
     width: 32px;
     height: 32px;
-    background-color: blue;
+    background: url(assets/icons/searchicon.png);
+    background-size: cover;
+}
+
+.search-button-titlebar:hover {
+    width: 32px;
+    height: 32px;
+    background: url(assets/icons/searchicon-bold.png);
+    background-size: cover;
+}
+
+.main-page {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.main-page-content {
+    width: 100%; /* Adjust width as needed */
+    height: 1000px; /* Adjust height as needed */
+    background-color: #00000000;
+    color: #FFFFFF;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 0.75;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.about-blurb {
+    width: 400px;
+    height: 130px;
+    background-color: #0000004b;
+    color: #FFFFFF;
+    backdrop-filter: blur(30px);
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    border-radius: 20px;
+    line-height: 0.25;
+    box-shadow: 0px 5px 10px #00000048;
+    justify-self: start;
+    max-width: 50vw;
+}
+
+.text-blurb {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.pfp-blurb {
+    background: url(assets/images/pointing_nosnapsquare.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #00000048;
+    justify-self: end;
+}
+
+.platforms-blurb {
+    width: 400px;
+    height: 225px;
+    background-color: #0000004b;
+    color: #FFFFFF;
+    backdrop-filter: blur(30px);
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    border-radius: 20px;
+    line-height: 0.25;
+    box-shadow: 0px 5px 10px #00000048;
+    max-width: 50vw;
+}
+
+.platform-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.youtube-icon {
+    display: block;
+    background: url(assets/icons/yt.png);
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px #0000002d;
+    transition: 250ms;
+}
+
+.youtube-icon:hover {
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+.discord-icon {
+    display: block;
+    background: url(assets/icons/discord.png);
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px #0000002d;
+    transition: 250ms;
+}
+
+.discord-icon:hover {
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+.roblox-icon {
+    display: block;
+    background: url(assets/icons/roblox.png);
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px #0000002d;
+    transition: 250ms;
+}
+
+.roblox-icon:hover {
+    transform: scale(1.1);
+    transition: 250ms;
 }
