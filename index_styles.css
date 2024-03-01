@@ -100,8 +100,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 0px;
 }
 
 .about-blurb {
@@ -117,7 +116,6 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     line-height: 0.25;
     box-shadow: 0px 5px 10px #00000048;
-    justify-self: start;
     max-width: 50vw;
 }
 
@@ -135,7 +133,6 @@ body::-webkit-scrollbar {
     width: 300px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #00000048;
-    justify-self: end;
 }
 
 .platforms-blurb {
