@@ -126,7 +126,7 @@ body::-webkit-scrollbar {
 }
 
 .pfp-blurb {
-    background: url(assets/images/pointing_nosnapsquare.png);
+    background: url(assets/images/full_blue_square.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
